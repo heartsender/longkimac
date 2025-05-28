@@ -3,18 +3,18 @@
 #   The `weight` parameter defines the order that the links will appear in.
 
 main:
-  - name: Home
+  - name: Trang Chủ
     url: /#top
     weight: 10
-  - name: Features
+  - name: Tính năng
     url: /#features
     weight: 20
-  - name: Solutions
+  - name: Giải pháp
     url: /#solutions
     weight: 30
-  - name: Resources
+  - name: Tài nguyên
     weight: 40
     hasChildren: true
-  - parent: Resources
+  - parent: Tài nguyên
     name: Blog
     url: blog/
