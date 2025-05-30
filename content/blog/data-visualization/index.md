@@ -58,12 +58,12 @@ Công_nhân->>Kỹ_sư: Báo cáo kết quả
 Lưu bảng dữ liệu (ví dụ kết quả đo đạc, thông số vật liệu) dưới dạng file CSV trong thư mục bài viết, sau đó sử dụng shortcode _Table_ để hiển thị:
 
 ```go
-{{< table path="mechanical-results.csv" header="true" caption="Bảng 1: Kết quả đo đạc" >}}
+{{< table path="results.csv" header="true" caption="Bảng 1: Kết quả đo đạc" >}}
 ```
 
 Kết quả:
 
-{{< table path="mechanical-results.csv" header="true" caption="Bảng 1: Kết quả đo đạc" >}}
+{{< table path="results.csv" header="true" caption="Bảng 1: Kết quả đo đạc" >}}
 
 ---
 
