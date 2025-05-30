@@ -1,138 +1,98 @@
 ---
-title: 🧠 Sharpen your thinking with a second brain
-summary: Create a personal knowledge base and share your knowledge with your peers.
+title: 🛠️ Nâng cao kiến thức cơ khí với hệ thống ghi chú thông minh
+summary: Xây dựng kho kiến thức cá nhân về cơ khí và chia sẻ với đồng nghiệp.
 date: 2023-10-26
 authors:
   - admin
 tags:
-  - Second Brain
+  - Cơ Khí
+  - Ghi chú
   - Markdown
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
 ---
 
-Create a personal knowledge base and share your knowledge with your peers.
+Xây dựng kho kiến thức cá nhân về cơ khí và chia sẻ với đồng nghiệp.
 
-Hugo Blox web framework empowers you with one of the most flexible note-taking capabilities out there.
+Hugo Blox web framework giúp bạn dễ dàng tạo hệ thống ghi chú linh hoạt, phù hợp cho kỹ sư và sinh viên ngành cơ khí.
 
-Create a powerful knowledge base that works on top of a local folder of plain text Markdown files.
+Tạo kho kiến thức mạnh mẽ dựa trên các file Markdown đơn giản, dễ dàng lưu trữ các tài liệu kỹ thuật, bản vẽ, quy trình gia công, và kinh nghiệm thực tế.
 
-Use it as your second brain, either publicly sharing your knowledge with your peers via your website, or via a private GitHub repository and password-protected site just for yourself.
+Bạn có thể sử dụng hệ thống này để chia sẻ công khai trên website hoặc lưu trữ riêng tư trên GitHub, bảo vệ bằng mật khẩu cho cá nhân hoặc nhóm.
 
-## Mindmaps
+## Sơ đồ tư duy (Mindmaps)
 
-Hugo Blox supports a Markdown extension for mindmaps.
+Hugo Blox hỗ trợ mở rộng Markdown cho sơ đồ tư duy, rất hữu ích để tổng hợp quy trình sản xuất, phân tích lỗi, hoặc lập kế hoạch bảo trì máy móc.
 
-With this open format, can even edit your mindmaps in other popular tools such as Obsidian.
-
-Simply insert a Markdown code block labelled as `markmap` and optionally set the height of the mindmap as shown in the example below.
-
-Mindmaps can be created by simply writing the items as a Markdown list within the `markmap` code block, indenting each item to create as many sub-levels as you need:
-
-<div class="highlight">
-<pre class="chroma">
-<code>
-```markmap {height="200px"}
-- Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
-```
-</code>
-</pre>
-</div>
-
-renders as
+Chỉ cần chèn một khối mã Markdown với nhãn `markmap` và tùy chọn chiều cao như ví dụ dưới đây:
 
 ```markmap {height="200px"}
-- Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
+- Quy trình gia công
+  - Tiện
+  - Phay
+  - Hàn
+  - Lắp ráp
 ```
 
-Anh here's a more advanced mindmap with formatting, code blocks, and math:
+Hiển thị như sau:
 
-<div class="highlight">
-<pre class="chroma">
-<code>
-```markmap
-- Mindmaps
-  - Links
-    - [Hugo Blox Docs](https://docs.hugoblox.com/)
-    - [Discord Community](https://discord.gg/z8wNYzb)
-    - [GitHub](https://github.com/HugoBlox/hugo-blox-builder)
-  - Features
-    - Markdown formatting
-    - **inline** ~~text~~ *styles*
-    - multiline
-      text
-    - `inline code`
-    -
-      ```js
-      console.log('hello');
-      console.log('code block');
-      ```
-    - Math: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
+```markmap {height="200px"}
+- Quy trình gia công
+  - Tiện
+  - Phay
+  - Hàn
+  - Lắp ráp
 ```
-</code>
-</pre>
-</div>
 
-renders as
+Một ví dụ nâng cao hơn với liên kết, định dạng và mã nguồn:
 
 ```markmap
-- Mindmaps
-  - Links
-    - [Hugo Blox Docs](https://docs.hugoblox.com/)
-    - [Discord Community](https://discord.gg/z8wNYzb)
-    - [GitHub](https://github.com/HugoBlox/hugo-blox-builder)
-  - Features
-    - Markdown formatting
-    - **inline** ~~text~~ *styles*
-    - multiline
-      text
-    - `inline code`
+- Cơ khí hiện đại
+  - Tài liệu tham khảo
+    - [Tiêu chuẩn ISO](https://www.iso.org/)
+    - [Diễn đàn cơ khí](https://www.cokhivietnam.net/)
+  - Kỹ năng
+    - Đọc bản vẽ kỹ thuật
+    - **Tính toán** ~~sai số~~ *dung sai*
+    - `Mã CNC`
     -
-      ```js
-      console.log('hello');
-      console.log('code block');
+      ```gcode
+      G01 X10 Y20 F100
       ```
-    - Math: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
+    - Công thức: $F = m \times a$
 ```
 
-## Highlighting
+## Đánh dấu nổi bật
 
-<mark>Highlight</mark> important text with `mark`:
+<mark>Đánh dấu</mark> thông tin quan trọng với thẻ `mark`:
 
 ```html
-<mark>Highlighted text</mark>
+<mark>Thông tin cần chú ý</mark>
 ```
 
-## Callouts
+## Ghi chú nổi bật (Callouts)
 
-Use [callouts](https://docs.hugoblox.com/reference/markdown/#callouts) (aka _asides_, _hints_, or _alerts_) to draw attention to notes, tips, and warnings.
+Sử dụng [callouts](https://docs.hugoblox.com/reference/markdown/#callouts) để nhấn mạnh lưu ý, mẹo hoặc cảnh báo trong tài liệu kỹ thuật.
 
-By wrapping a paragraph in `{{%/* callout note */%}} ... {{%/* /callout */%}}`, it will render as an aside.
+Ví dụ:
 
 ```markdown
 {{%/* callout note */%}}
-A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
+Kiểm tra dầu bôi trơn trước khi vận hành máy.
 {{%/* /callout */%}}
 ```
 
-renders as
+Hiển thị như sau:
 
 {{% callout note %}}
-A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
+Kiểm tra dầu bôi trơn trước khi vận hành máy.
 {{% /callout %}}
 
-Or use the `warning` callout type so your readers don't miss critical details:
+Hoặc sử dụng loại `warning` để cảnh báo:
 
 {{% callout warning %}}
-A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
+Luôn ngắt nguồn điện trước khi bảo trì thiết bị.
 {{% /callout %}}
 
-## Did you find this page helpful? Consider sharing it 🙌
+## Bạn thấy bài viết hữu ích? Hãy chia sẻ cho đồng nghiệp trong ngành cơ khí! 🙌
+

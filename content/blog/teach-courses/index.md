@@ -1,143 +1,64 @@
 ---
-title: 👩🏼‍🏫 Teach academic courses
-summary: Embed videos, podcasts, code, LaTeX math, and even test students!
+title: 🏭 Giới thiệu về Công ty Cơ Khí Long Kim AC
+summary: Tìm hiểu về dịch vụ gia công cơ khí, sản phẩm, quy trình sản xuất và các dự án nổi bật của Long Kim AC.
 date: 2023-10-24
-math: true
 authors:
   - admin
 tags:
-  - Hugo
-  - Hugo Blox Builder
-  - Markdown
+  - Cơ khí
+  - Gia công
+  - Sản xuất
 image:
-  caption: 'Embed rich media such as videos and LaTeX math'
+  caption: 'Dịch vụ cơ khí Long Kim AC - Uy tín, chất lượng, hiện đại'
 ---
 
-[Hugo Blox Builder](https://hugoblox.com) is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.
+Chào mừng bạn đến với **Công ty Cơ Khí Long Kim AC** – chuyên gia trong lĩnh vực gia công cơ khí chính xác, chế tạo máy móc và sản xuất linh kiện công nghiệp tại Việt Nam.
 
-**Embed videos, podcasts, code, LaTeX math, and even test students!**
+## Dịch vụ của Long Kim AC
 
-On this page, you'll find some examples of the types of technical content that can be rendered with Hugo Blox.
+Chúng tôi cung cấp các dịch vụ:
 
-## Video
+- Gia công CNC (phay, tiện, cắt dây)
+- Thiết kế, chế tạo khuôn mẫu và đồ gá
+- Sản xuất chi tiết máy, linh kiện cơ khí theo yêu cầu
+- Lắp ráp, bảo trì và sửa chữa thiết bị công nghiệp
 
-Teach your course by sharing videos with your students. Choose from one of the following approaches:
+## Video giới thiệu
+
+Khám phá quy trình sản xuất hiện đại tại Long Kim AC:
 
 {{< youtube D2vj0WcvH5c >}}
 
-**Youtube**:
+## Dự án tiêu biểu
 
-    {{</* youtube w7Ft2ymGmfc */>}}
+Một số dự án Long Kim AC đã thực hiện:
 
-**Bilibili**:
+- Gia công linh kiện cho nhà máy sản xuất ô tô, xe máy
+- Chế tạo băng tải, hệ thống tự động hóa cho dây chuyền sản xuất
+- Sản xuất khuôn mẫu nhựa, kim loại cho ngành điện tử, thực phẩm
 
-    {{</* bilibili id="BV1WV4y1r7DF" */>}}
+## Hình ảnh sản phẩm
 
-**Video file**
+Một số sản phẩm tiêu biểu của Long Kim AC:
 
-Videos may be added to a page by either placing them in your `assets/media/` media library or in your [page's folder](https://gohugo.io/content-management/page-bundles/), and then embedding them with the _video_ shortcode:
+![Sản phẩm cơ khí Long Kim AC](product1.jpg)
+![Linh kiện máy móc Long Kim AC](product2.jpg)
 
-    {{</* video src="my_video.mp4" controls="yes" */>}}
+## Quy trình làm việc
 
-## Podcast
+1. Tiếp nhận và phân tích yêu cầu khách hàng
+2. Tư vấn giải pháp kỹ thuật, báo giá chi tiết
+3. Thiết kế, gia công, kiểm tra chất lượng nghiêm ngặt
+4. Bàn giao sản phẩm đúng tiến độ, hỗ trợ sau bán hàng
 
-You can add a podcast or music to a page by placing the MP3 file in the page's folder or the media library folder and then embedding the audio on your page with the _audio_ shortcode:
+## Liên hệ
 
-    {{</* audio src="ambient-piano.mp3" */>}}
+Để được tư vấn hoặc nhận báo giá, vui lòng liên hệ:
 
-Try it out:
+- Địa chỉ: Số 123 Đường Công Nghiệp, Quận 9, TP.HCM
+- Điện thoại: 0901 234 567
+- Email: info@longkimac.vn
 
-{{< audio src="ambient-piano.mp3" >}}
+---
 
-## Test students
-
-Provide a simple yet fun self-assessment by revealing the solutions to challenges with the `spoiler` shortcode:
-
-```markdown
-{{</* spoiler text="👉 Click to view the solution" */>}}
-You found me!
-{{</* /spoiler */>}}
-```
-
-renders as
-
-{{< spoiler text="👉 Click to view the solution" >}} You found me 🎉 {{< /spoiler >}}
-
-## Math
-
-Hugo Blox Builder supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the `math` option in your `config/_default/params.yaml` file.
-
-To render _inline_ or _block_ math, wrap your LaTeX math with `{{</* math */>}}$...${{</* /math */>}}` or `{{</* math */>}}$$...$${{</* /math */>}}`, respectively.
-
-{{% callout note %}}
-We wrap the LaTeX math in the Hugo Blox _math_ shortcode to prevent Hugo rendering our math as Markdown.
-{{% /callout %}}
-
-Example **math block**:
-
-```latex
-{{</* math */>}}
-$$
-\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}
-$$
-{{</* /math */>}}
-```
-
-renders as
-
-{{< math >}}
-$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
-{{< /math >}}
-
-Example **inline math** `{{</* math */>}}$\nabla F(\mathbf{x}_{n})${{</* /math */>}}` renders as {{< math >}}$\nabla F(\mathbf{x}_{n})${{< /math >}}.
-
-Example **multi-line math** using the math linebreak (`\\`):
-
-```latex
-{{</* math */>}}
-$$f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
-1-p_{0}^{*} & \text{if }k=0.\end{cases}$$
-{{</* /math */>}}
-```
-
-renders as
-
-{{< math >}}
-
-$$
-f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
-1-p_{0}^{*} & \text{if }k=0.\end{cases}
-$$
-
-{{< /math >}}
-
-## Code
-
-Hugo Blox Builder utilises Hugo's Markdown extension for highlighting code syntax. The code theme can be selected in the `config/_default/params.yaml` file.
-
-
-    ```python
-    import pandas as pd
-    data = pd.read_csv("data.csv")
-    data.head()
-    ```
-
-renders as
-
-```python
-import pandas as pd
-data = pd.read_csv("data.csv")
-data.head()
-```
-
-## Inline Images
-
-```go
-{{</* icon name="python" */>}} Python
-```
-
-renders as
-
-{{< icon name="python" >}} Python
-
-## Did you find this page helpful? Consider sharing it 🙌
+**Công ty Cơ Khí Long Kim AC** – Đối tác tin cậy, đồng hành phát triển cùng doanh nghiệp!

@@ -1,94 +1,98 @@
 ---
-title: ✅ Manage your projects
-summary: Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!
+title: 🛠️ Quản lý dự án cơ khí hiệu quả
+summary: Quản lý dự án cơ khí dễ dàng - lập sơ đồ ý tưởng, biểu đồ Gantt, danh sách công việc và nhiều hơn nữa!
 date: 2023-10-23
 authors:
   - admin
 tags:
-  - Hugo Blox
+  - Quản lý dự án
+  - Cơ khí
   - Markdown
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
+  caption: 'Ảnh: [**Unsplash**](https://unsplash.com)'
 ---
 
-Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!
+Quản lý dự án cơ khí dễ dàng - lập sơ đồ ý tưởng, biểu đồ Gantt, danh sách công việc và nhiều hơn nữa!
 
-## Ideation
+## Lên ý tưởng
 
-Hugo Blox supports a Markdown extension for mindmaps.
+Bạn có thể sử dụng Markdown để tạo sơ đồ ý tưởng (mindmap) cho các dự án cơ khí.
 
-Simply insert a Markdown code block labelled as `markmap` and optionally set the height of the mindmap as shown in the example below.
-
-Mindmaps can be created by simply writing the items as a Markdown list within the `markmap` code block, indenting each item to create as many sub-levels as you need:
+Chỉ cần chèn một khối mã Markdown với nhãn `markmap` và viết các ý tưởng dưới dạng danh sách, ví dụ:
 
 <div class="highlight">
 <pre class="chroma">
 <code>
 ```markmap {height="200px"}
-- Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
+- Dự án chế tạo máy
+  - Thiết kế bản vẽ
+  - Lập danh sách vật tư
+  - Gia công chi tiết
+  - Lắp ráp hoàn thiện
 ```
 </code>
 </pre>
 </div>
 
-renders as
+hiển thị như
 
 ```markmap {height="200px"}
-- Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
+- Dự án chế tạo máy
+  - Thiết kế bản vẽ
+  - Lập danh sách vật tư
+  - Gia công chi tiết
+  - Lắp ráp hoàn thiện
 ```
 
-## Diagrams
+## Biểu đồ tiến độ
 
-Hugo Blox supports the _Mermaid_ Markdown extension for diagrams.
+Markdown hỗ trợ _Mermaid_ để vẽ biểu đồ tiến độ (Gantt chart) cho dự án cơ khí.
 
-An example **Gantt diagram**:
+Ví dụ về **biểu đồ Gantt**:
 
     ```mermaid
     gantt
-    section Section
-    Completed :done,    des1, 2014-01-06,2014-01-08
-    Active        :active,  des2, 2014-01-07, 3d
-    Parallel 1   :         des3, after des1, 1d
-    Parallel 2   :         des4, after des1, 1d
-    Parallel 3   :         des5, after des3, 1d
-    Parallel 4   :         des6, after des4, 1d
+    section Thiết kế
+    Vẽ bản vẽ :done,    des1, 2024-01-01,2024-01-05
+    section Gia công
+    Chuẩn bị vật tư :active, des2, 2024-01-06, 2d
+    Gia công chi tiết :      des3, after des2, 3d
+    section Lắp ráp
+    Lắp ráp hoàn thiện :    des4, after des3, 2d
     ```
 
-renders as
+hiển thị như
 
 ```mermaid
 gantt
-section Section
-Completed :done,    des1, 2014-01-06,2014-01-08
-Active        :active,  des2, 2014-01-07, 3d
-Parallel 1   :         des3, after des1, 1d
-Parallel 2   :         des4, after des1, 1d
-Parallel 3   :         des5, after des3, 1d
-Parallel 4   :         des6, after des4, 1d
+section Thiết kế
+Vẽ bản vẽ :done,    des1, 2024-01-01,2024-01-05
+section Gia công
+Chuẩn bị vật tư :active, des2, 2024-01-06, 2d
+Gia công chi tiết :      des3, after des2, 3d
+section Lắp ráp
+Lắp ráp hoàn thiện :    des4, after des3, 2d
 ```
 
-## Todo lists
+## Danh sách công việc
 
-You can even write your todo lists in Markdown too:
+Bạn cũng có thể viết danh sách công việc cho dự án cơ khí bằng Markdown:
 
 ```markdown
-- [x] Write math example
-  - [x] Write diagram example
-- [ ] Do something else
+- [x] Hoàn thành bản vẽ thiết kế
+  - [x] Kiểm tra thông số kỹ thuật
+- [ ] Mua vật tư
+- [ ] Gia công chi tiết
+- [ ] Lắp ráp và kiểm tra
 ```
 
-renders as
+hiển thị như
 
-- [x] Write math example
-  - [x] Write diagram example
-- [ ] Do something else
+- [x] Hoàn thành bản vẽ thiết kế
+  - [x] Kiểm tra thông số kỹ thuật
+- [ ] Mua vật tư
+- [ ] Gia công chi tiết
+- [ ] Lắp ráp và kiểm tra
 
-## Did you find this page helpful? Consider sharing it 🙌
+## Bạn thấy trang này hữu ích? Hãy chia sẻ nhé! 🙌
+

@@ -1,157 +1,70 @@
 ---
-title: 📈 Communicate your results effectively with the best data visualizations
-summary: Use popular tools such as Plotly, Mermaid, and data frames.
+title: 🛠️ Minh họa và trình bày dữ liệu kỹ thuật cho ngành cơ khí
+summary: Hướng dẫn sử dụng các công cụ trực quan như Plotly, Mermaid và bảng dữ liệu để trình bày thông tin kỹ thuật cơ khí một cách hiệu quả.
 date: 2023-10-25
 authors:
   - admin
 tags:
-  - Hugo
-  - Hugo Blox
-  - Markdown
+  - Cơ khí
+  - Kỹ thuật
+  - Trực quan hóa dữ liệu
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
 ---
 
-Hugo Blox is designed to give technical content creators a seamless experience. You can focus on the content and Hugo Blox handles the rest.
+Trang web này hỗ trợ kỹ sư cơ khí trình bày thông tin kỹ thuật, kết quả đo đạc và quy trình sản xuất một cách trực quan, dễ hiểu. Bạn chỉ cần tập trung vào nội dung chuyên môn, hệ thống sẽ hỗ trợ phần trình bày.
 
-Use popular tools such as Plotly, Mermaid, and data frames.
+Các công cụ như Plotly, Mermaid và bảng dữ liệu giúp minh họa các thông số, quy trình hoặc kết quả kiểm tra trong lĩnh vực cơ khí.
 
-## Charts
+## Biểu đồ kỹ thuật
 
-Hugo Blox supports the popular [Plotly](https://plot.ly/) format for interactive data visualizations. With Plotly, you can design almost any kind of visualization you can imagine!
+Sử dụng [Plotly](https://plot.ly/) để tạo các biểu đồ tương tác như biểu đồ lực, biểu đồ ứng suất, biểu đồ nhiệt độ hoặc biểu đồ mô phỏng chuyển động.
 
-Save your Plotly JSON in your page folder, for example `line-chart.json`, and then add the `{{</* chart data="line-chart" */>}}` shortcode where you would like the chart to appear.
+Lưu file JSON biểu đồ (ví dụ `force-chart.json`) vào thư mục bài viết, sau đó chèn shortcode `{{< chart data="force-chart" >}}` vào vị trí mong muốn.
 
-Demo:
+Ví dụ:
 
-{{< chart data="line-chart" >}}
+{{< chart data="force-chart" >}}
 
-You might also find the [Plotly JSON Editor](http://plotly-json-editor.getforge.io/) useful.
+Bạn có thể sử dụng [Plotly JSON Editor](http://plotly-json-editor.getforge.io/) để chỉnh sửa biểu đồ theo nhu cầu.
 
-## Diagrams
+## Sơ đồ quy trình và cấu trúc
 
-Hugo Blox supports the _Mermaid_ Markdown extension for diagrams.
+Markdown hỗ trợ mở rộng _Mermaid_ để vẽ sơ đồ quy trình sản xuất, sơ đồ lắp ráp, hoặc sơ đồ cấu trúc máy móc.
 
-An example **flowchart**:
-
-    ```mermaid
-    graph TD
-    A[Hard] -->|Text| B(Round)
-    B --> C{Decision}
-    C -->|One| D[Result 1]
-    C -->|Two| E[Result 2]
-    ```
-
-renders as
+Ví dụ **sơ đồ quy trình sản xuất**:
 
 ```mermaid
 graph TD
-A[Hard] -->|Text| B(Round)
-B --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
+A[Chuẩn bị vật liệu] --> B[Gia công thô]
+B --> C[Gia công tinh]
+C --> D[Kiểm tra chất lượng]
+D --> E[Hoàn thiện sản phẩm]
 ```
 
-An example **sequence diagram**:
-
-    ```mermaid
-    sequenceDiagram
-    Alice->>John: Hello John, how are you?
-    loop Healthcheck
-        John->>John: Fight against hypochondria
-    end
-    Note right of John: Rational thoughts!
-    John-->>Alice: Great!
-    John->>Bob: How about you?
-    Bob-->>John: Jolly good!
-    ```
-
-renders as
+Ví dụ **sơ đồ lắp ráp thiết bị**:
 
 ```mermaid
 sequenceDiagram
-Alice->>John: Hello John, how are you?
-loop Healthcheck
-    John->>John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John-->>Alice: Great!
-John->>Bob: How about you?
-Bob-->>John: Jolly good!
+Kỹ_sư->>Công_nhân: Giao bản vẽ lắp ráp
+Công_nhân->>Kho: Lấy linh kiện
+Công_nhân->>Máy: Tiến hành lắp ráp
+Máy-->>Công_nhân: Hoàn thành lắp ráp
+Công_nhân->>Kỹ_sư: Báo cáo kết quả
 ```
 
-An example **class diagram**:
+## Bảng dữ liệu kỹ thuật
 
-    ```mermaid
-    classDiagram
-    Class01 <|-- AveryLongClass : Cool
-    Class03 *-- Class04
-    Class05 o-- Class06
-    Class07 .. Class08
-    Class09 --> C2 : Where am i?
-    Class09 --* C3
-    Class09 --|> Class07
-    Class07 : equals()
-    Class07 : Object[] elementData
-    Class01 : size()
-    Class01 : int chimp
-    Class01 : int gorilla
-    Class08 <--> C2: Cool label
-    ```
-
-renders as
-
-```mermaid
-classDiagram
-Class01 <|-- AveryLongClass : Cool
-Class03 *-- Class04
-Class05 o-- Class06
-Class07 .. Class08
-Class09 --> C2 : Where am i?
-Class09 --* C3
-Class09 --|> Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-Class08 <--> C2: Cool label
-```
-
-An example **state diagram**:
-
-    ```mermaid
-    stateDiagram
-    [*] --> Still
-    Still --> [*]
-    Still --> Moving
-    Moving --> Still
-    Moving --> Crash
-    Crash --> [*]
-    ```
-
-renders as
-
-```mermaid
-stateDiagram
-[*] --> Still
-Still --> [*]
-Still --> Moving
-Moving --> Still
-Moving --> Crash
-Crash --> [*]
-```
-
-## Data Frames
-
-Save your spreadsheet as a CSV file in your page's folder and then render it by adding the _Table_ shortcode to your page:
+Lưu bảng dữ liệu (ví dụ kết quả đo đạc, thông số vật liệu) dưới dạng file CSV trong thư mục bài viết, sau đó sử dụng shortcode _Table_ để hiển thị:
 
 ```go
-{{</* table path="results.csv" header="true" caption="Table 1: My results" */>}}
+{{< table path="mechanical-results.csv" header="true" caption="Bảng 1: Kết quả đo đạc" >}}
 ```
 
-renders as
+Kết quả:
 
-{{< table path="results.csv" header="true" caption="Table 1: My results" >}}
+{{< table path="mechanical-results.csv" header="true" caption="Bảng 1: Kết quả đo đạc" >}}
 
-## Did you find this page helpful? Consider sharing it 🙌
+---
+
+Nếu bạn thấy nội dung hữu ích, hãy chia sẻ cho đồng nghiệp trong ngành cơ khí! 🚀
