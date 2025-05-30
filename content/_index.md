@@ -65,19 +65,19 @@ sections:
       text: Chuyên gia trong thiết kế, gia công và lắp đặt các sản phẩm cơ khí công nghiệp.
       items:
         - name: Gia Công Cơ Khí Chính Xác
-          icon: wrench-screwdriver
+          icon: squares-2x2
           description: Đáp ứng mọi yêu cầu về gia công chi tiết máy, kết cấu thép, inox, nhôm.
         - name: Thiết Kế & Lắp Đặt
-          icon: comments
+          icon: pencil-square
           description: Tư vấn, thiết kế và thi công các hệ thống cơ khí theo yêu cầu.
         - name: Bảo Trì & Sửa Chữa
-          icon: shield-check
+          icon: wrench
           description: Dịch vụ bảo trì, sửa chữa máy móc, thiết bị công nghiệp tận nơi.
         - name: Đội Ngũ Kỹ Sư Giỏi
           icon: users
           description: Đội ngũ kỹ sư, công nhân lành nghề, giàu kinh nghiệm.
         - name: Cam Kết Chất Lượng
-          icon: star
+          icon: check-badge
           description: Sản phẩm đạt tiêu chuẩn, bảo hành dài hạn, hỗ trợ tận tâm.
         - name: Giá Cạnh Tranh
           icon: tag
