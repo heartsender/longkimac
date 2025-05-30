@@ -1,9 +1,10 @@
 ---
-title: 'Trang Chủ'
+title: 'Home'
 date: 2023-10-24
 type: landing
 
 design:
+  # Default section spacing
   spacing: "6rem"
 
 sections:
@@ -27,10 +28,12 @@ sections:
       spacing:
         padding: [0, 0, 0, 0]
         margin: [0, 0, 0, 0]
+      # For full-screen, add `min-h-screen` below
       css_class: "dark"
       background:
         color: "navy"
         image:
+          # Add your image background to `assets/media/`.
           filename: bg-triangles.svg
           filters:
         brightness: 0.5
@@ -50,7 +53,9 @@ sections:
         Khách hàng doanh nghiệp  
         trên toàn quốc
         design:
+      # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
+      # Reduce spacing
       spacing:
         padding: ["1rem", 0, "1rem", 0]
       - block: features
@@ -88,6 +93,7 @@ sections:
         - "Gia công kết cấu thép, băng tải, bồn bể"
         - "Thiết kế, lắp đặt hệ thống cơ khí tự động"
         - "Cải tạo, nâng cấp dây chuyền sản xuất"
+          # Upload image to `assets/media/` and reference the filename here
           image: project-showcase.jpg
           button:
         text: Xem Dự Án
@@ -99,11 +105,13 @@ sections:
         - "Tư vấn giải pháp tối ưu"
         - "Bảo hành, bảo trì tận nơi"
         - "Phản hồi nhanh chóng, chuyên nghiệp"
+          # Upload image to `assets/media/` and reference the filename here
           image: support.jpg
           button:
         text: Liên Hệ Ngay
         url: /lien-he/
         design:
+      # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
       - block: testimonials
         content:
@@ -112,10 +120,12 @@ sections:
       items:
         - name: "Lê Minh Nhựt"
           role: "Giám đốc"
+          # Upload image to `assets/media/` and reference the filename here
           image: "testimonial-1.jpg"
           text: "Long Kim AC luôn đáp ứng tiến độ và chất lượng, đội ngũ hỗ trợ rất chuyên nghiệp!"
         design:
       spacing:
+        # Reduce bottom spacing so the testimonial appears vertically centered between sections
         padding: ["6rem", 0, 0, 0]
       - block: cta-card
         content:
@@ -126,6 +136,7 @@ sections:
         url: /lien-he/
         design:
       card:
+        # Card background color (CSS class)
         css_class: "bg-primary-700"
         css_style: ""
 ---
