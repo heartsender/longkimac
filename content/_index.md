@@ -24,7 +24,7 @@ sections:
         link:
           text: "Tìm hiểu thêm"
           url: "/gioi-thieu/"
-        design:
+    design:
       spacing:
         padding: [0, 0, 0, 0]
         margin: [0, 0, 0, 0]
@@ -36,31 +36,31 @@ sections:
           # Add your image background to `assets/media/`.
           filename: bg-triangles.svg
           filters:
-        brightness: 0.5
-      - block: stats
-        content:
+            brightness: 0.5
+  - block: stats
+    content:
       items:
         - statistic: "200+"
           description: |
-        Dự án cơ khí  
-        đã hoàn thành
+            Dự án cơ khí  
+            đã hoàn thành
         - statistic: "15+"
           description: |
-        Năm kinh nghiệm  
-        trong lĩnh vực
+            Năm kinh nghiệm  
+            trong lĩnh vực
         - statistic: "500+"
           description: |
-        Khách hàng doanh nghiệp  
-        trên toàn quốc
-        design:
+            Khách hàng doanh nghiệp  
+            trên toàn quốc
+    design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
       # Reduce spacing
       spacing:
         padding: ["1rem", 0, "1rem", 0]
-      - block: features
-        id: features
-        content:
+  - block: features
+    id: features
+    content:
       title: Dịch Vụ & Thế Mạnh
       text: Chuyên gia trong thiết kế, gia công và lắp đặt các sản phẩm cơ khí công nghiệp.
       items:
@@ -82,39 +82,39 @@ sections:
         - name: Giá Cạnh Tranh
           icon: tag
           description: Báo giá minh bạch, tối ưu chi phí cho khách hàng.
-      - block: cta-image-paragraph
-        id: solutions
-        content:
+  - block: cta-image-paragraph
+    id: solutions
+    content:
       items:
         - title: Dự Án Tiêu Biểu
           text: Đã thực hiện nhiều dự án lớn cho nhà máy, xí nghiệp, khu công nghiệp.
           feature_icon: check
           features:
-        - "Gia công kết cấu thép, băng tải, bồn bể"
-        - "Thiết kế, lắp đặt hệ thống cơ khí tự động"
-        - "Cải tạo, nâng cấp dây chuyền sản xuất"
+            - "Gia công kết cấu thép, băng tải, bồn bể"
+            - "Thiết kế, lắp đặt hệ thống cơ khí tự động"
+            - "Cải tạo, nâng cấp dây chuyền sản xuất"
           # Upload image to `assets/media/` and reference the filename here
           image: project-showcase.jpg
           button:
-        text: Xem Dự Án
-        url: /du-an/
+            text: Xem Dự Án
+            url: /du-an/
         - title: Hỗ Trợ Khách Hàng
           text: Tư vấn miễn phí, hỗ trợ kỹ thuật 24/7 cho mọi khách hàng.
           feature_icon: bolt
           features:
-        - "Tư vấn giải pháp tối ưu"
-        - "Bảo hành, bảo trì tận nơi"
-        - "Phản hồi nhanh chóng, chuyên nghiệp"
+            - "Tư vấn giải pháp tối ưu"
+            - "Bảo hành, bảo trì tận nơi"
+            - "Phản hồi nhanh chóng, chuyên nghiệp"
           # Upload image to `assets/media/` and reference the filename here
           image: support.jpg
           button:
-        text: Liên Hệ Ngay
-        url: /lien-he/
-        design:
+            text: Liên Hệ Ngay
+            url: /lien-he/
+    design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
-      - block: testimonials
-        content:
+  - block: testimonials
+    content:
       title: ""
       text: ""
       items:
@@ -123,18 +123,18 @@ sections:
           # Upload image to `assets/media/` and reference the filename here
           image: "testimonial-1.jpg"
           text: "Long Kim AC luôn đáp ứng tiến độ và chất lượng, đội ngũ hỗ trợ rất chuyên nghiệp!"
-        design:
+    design:
       spacing:
         # Reduce bottom spacing so the testimonial appears vertically centered between sections
         padding: ["6rem", 0, 0, 0]
-      - block: cta-card
-        content:
+  - block: cta-card
+    content:
       title: Liên hệ nhận tư vấn & báo giá miễn phí
       text: Đội ngũ Long Kim AC luôn sẵn sàng hỗ trợ mọi nhu cầu cơ khí của bạn!
       button:
         text: Liên Hệ Ngay
         url: /lien-he/
-        design:
+    design:
       card:
         # Card background color (CSS class)
         css_class: "bg-primary-700"
