@@ -68,7 +68,7 @@ sections:
           icon: wrench-screwdriver
           description: Đáp ứng mọi yêu cầu về gia công chi tiết máy, kết cấu thép, inox, nhôm.
         - name: Thiết Kế & Lắp Đặt
-          icon: blueprint
+          icon: comments
           description: Tư vấn, thiết kế và thi công các hệ thống cơ khí theo yêu cầu.
         - name: Bảo Trì & Sửa Chữa
           icon: shield-check
