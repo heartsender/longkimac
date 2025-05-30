@@ -39,7 +39,7 @@ cascade:
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
+defaultContentLanguage: vi
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
 removePathAccents: true
