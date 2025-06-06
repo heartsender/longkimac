@@ -11,11 +11,11 @@ appearance:
 # SEO
 marketing:
   seo:
-    site_type: Person
-    local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo landing page theme powered by Hugo Blox website builder.'
-    twitter: 'GetResearchDev'
+    site_type: Organization
+    local_business_type: 'Cơ khí'
+    org_name: 'Cơ Khí Long Kim AC'
+    description: 'Cơ khí Tây Ninh, chuyên gia công cơ khí, lắp đặt, sửa chữa máy móc, thiết bị công nghiệp tại Long Kim AC.'
+    twitter: ''
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -51,5 +51,5 @@ footer:
 
 # Localization
 locale:
-  date_format: 'Jan 2, 2006'
-  time_format: '3:04 PM'
+  date_format: '02/01/2006'
+  time_format: '15:04'

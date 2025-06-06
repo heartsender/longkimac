@@ -118,7 +118,7 @@ sections:
       title: ""
       text: ""
       items:
-        - name: "Lê Minh Nhựt"
+        - name: "Khách hàng"
           role: "Giám đốc"
           # Upload image to `assets/media/` and reference the filename here
           image: "testimonial-1.jpg"
