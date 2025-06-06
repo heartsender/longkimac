@@ -40,7 +40,7 @@ header:
     button:
       enable: true
       text: "Liên Hệ Ngay"
-      url: "/lien-he/"
+      url: "lien-he/"
     show_search: true
     show_theme_chooser: true
 

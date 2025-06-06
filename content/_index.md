@@ -14,16 +14,16 @@ sections:
       text: 🏭 Giải pháp cơ khí chuyên nghiệp – Uy tín – Chất lượng 🏭
       primary_action:
         text: Liên Hệ Ngay
-        url: /lien-he/
+        url: lien-he/
         icon: phone
       secondary_action:
         text: Về Chúng Tôi
-        url: /gioi-thieu/
+        url: gioi-thieu/
       announcement:
         text: "Chào mừng đến với Long Kim AC – Đối tác tin cậy trong ngành cơ khí."
         link:
           text: "Tìm hiểu thêm"
-          url: "/gioi-thieu/"
+          url: "gioi-thieu/"
     design:
       spacing:
         padding: [0, 0, 0, 0]
@@ -97,7 +97,7 @@ sections:
           image: project-showcase.jpg
           button:
             text: Xem Dự Án
-            url: /du-an/
+            url: du-an/
         - title: Hỗ Trợ Khách Hàng
           text: Tư vấn miễn phí, hỗ trợ kỹ thuật 24/7 cho mọi khách hàng.
           feature_icon: bolt
@@ -109,7 +109,7 @@ sections:
           image: support.jpg
           button:
             text: Liên Hệ Ngay
-            url: /lien-he/
+            url: lien-he/
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
@@ -133,7 +133,7 @@ sections:
       text: Đội ngũ Long Kim AC luôn sẵn sàng hỗ trợ mọi nhu cầu cơ khí của bạn!
       button:
         text: Liên Hệ Ngay
-        url: /lien-he/
+        url: lien-he/
     design:
       card:
         # Card background color (CSS class)
