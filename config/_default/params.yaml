@@ -36,18 +36,18 @@ header:
     logo:
       text: ""
       # Logo filename in `assets/media/` folder
-      filename: "logo.svg"
+      filename: "logo.jpg"
     button:
       enable: true
-      text: "Get Started"
-      url: "https://hugoblox.com/templates/"
+      text: "Liên Hệ Ngay"
+      url: "/lien-he/"
     show_search: true
     show_theme_chooser: true
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} My Company'
+    notice: '© {year} Long Kim AC Company'
 
 # Localization
 locale:
