@@ -12,9 +12,10 @@ main:
   - name: Giải pháp
     url: /#solutions
     weight: 30
-  - name: Tài nguyên
-    weight: 40
-    hasChildren: true
-  - parent: Tài nguyên
-    name: Blog
+  - name: Blog
     url: blog/
+    weight: 40
+  - name: Liên Hệ
+    url: lien-he/
+    weight: 50
+
